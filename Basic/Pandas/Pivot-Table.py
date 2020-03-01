@@ -7,6 +7,7 @@ pd.pivot_table(args..)
     columns     additional segment - horizontal index
     aggfunc     aggregate function(list/dict)
 
+
 '''
 import pandas as pd
 

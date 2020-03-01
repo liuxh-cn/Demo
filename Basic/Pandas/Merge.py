@@ -1,6 +1,8 @@
 '''
 pandas.merge : match connected keywords(left & right)
 inner/outer/left/right join
+args : df1, df2, on(left_on, right_on, left_index, right_index), how, suffixex
+
 '''
 import pandas as pd
 '''
