@@ -1,7 +1,9 @@
 '''
 pandas.merge : match connected keywords(left & right)
-inner/outer/left/right join
-args : df1, df2, on(left_on, right_on, left_index, right_index), how, suffixex
+    inner/outer/left/right join
+        left: 左侧包含右侧的全部情况，对左侧补充信息
+        inner: 左侧包含右侧的情报情况，对右侧补充信息
+    args : df1, df2, on(left_on, right_on, left_index, right_index), how, suffixex
 
 '''
 import pandas as pd

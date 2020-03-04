@@ -1,8 +1,12 @@
 '''
 Determine the relationship (equal or not) between two objects in Python
 ==、cmp()、is
+assert_frame_equal(): print error once unequal values are detacted
 '''
 import operator
+import pandas as pd
+import numpy as np
+from pandas.testing import assert_frame_equal
 
 a = [1, 2, 3]
 b = [2, 3, 4]
@@ -20,3 +24,9 @@ print(a is d)
 print(operator.eq(a, c))
 print(operator.eq(a, d))
 
+# Compare DataFrame
+df1 = pd.DataFrame(np.arange(12).reshape(3, -1))
+df2 = pd.DataFrame(np.arange(12).reshape(3, -1))
+assert_frame_equal(df1, df2)
+df2.loc[2, 1] = 7
+assert_frame_equal(df1, df2)

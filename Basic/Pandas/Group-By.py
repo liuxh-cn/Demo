@@ -7,4 +7,6 @@ df = pd.DataFrame({'key1': ['a', 'a', 'b', 'b', 'a'],
                   'data1': np.random.randint(1, 10, 5),
                   'data2': np.random.randint(1, 10, 5)})
 
-
+print(df)
+grouped = df['data1'].groupby(df['key1']).mean()
+print(grouped)
