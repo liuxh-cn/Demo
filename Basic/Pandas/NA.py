@@ -16,6 +16,8 @@ Fill NA
     df.fillna(value, inplace=False)    # fill na with value
     df[col].fillna(..)
         inplace : operate on raw object or not (defult:False)
+
+Drop Duplicates
 '''
 import pandas as pd
 import numpy as np

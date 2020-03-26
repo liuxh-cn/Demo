@@ -1,6 +1,11 @@
 '''
-for idx, x in enumerate(x):
-    idx & value
+enumerate()
+    e.g.
+        for idx, x in enumerate(x):
+            idx & value
+iter()
+    e.g.
+
 '''
 import numpy as np
 import matplotlib.pyplot as plt
@@ -12,6 +17,13 @@ yr = np.array([7.82327586, 9.77586207, 11.72844828, 15.63362069, 19.5387931 ])
 plt.figure()
 plt.plot(X, yr, 'k-')
 for idx, x in enumerate(X):
-    print('%d - %d' % (idx, x))
+    # print('%d - %d' % (idx, x))
     plt.plot([x, x], [y[idx], yr[idx]], 'r.-')
-plt.show()
+# plt.show()
+
+'''simple display of enumerate()'''
+for idx, x in enumerate(X):
+    print('%d - %d' % (idx, x))
+'''simple display of iter()'''
+for i in iter(X):
+    print('%d' % (i))
